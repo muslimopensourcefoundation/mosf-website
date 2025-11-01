@@ -1,0 +1,24 @@
+# CODEOWNERS
+# This file defines code ownership for the repository.
+# Each line is a file pattern followed by one or more owners.
+# More information: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for the entire repository
+* @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+
+# Source code
+/src/ @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+
+# Configuration files
+*.json @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+*.js @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+*.jsx @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+*.config.js @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+
+# Documentation
+*.md @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+/docs/ @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+
+# GitHub workflow files
+/.github/ @bederbourahmah-mof beder.bourahmah@muslimopensource.org
+
