@@ -1,0 +1,37 @@
+{
+  "slug": "quran-api-fawaz",
+  "name": "Free Quran API (90+ languages)",
+  "repoUrl": "https://github.com/fawazahmed0/quran-api",
+  "websiteUrl": "https://quranapi.pages.dev/",
+  "category": "Qur'an / API / Data",
+  "evaluationDate": "2025-11-04",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 10, "comment": "Global, no-auth access to Qur'an text/translations directly serves Islamic education and public benefit." },
+    "openness": { "score": 10, "comment": "Explicit Unlicense (public domain) with LICENSE file. Maximally permissive for reuse and research." },
+    "liveness": { "score": 8, "comment": "Active issues and commits through 2025; CDN JSON versioning in use; no tagged releases." },
+    "value": { "score": 9, "comment": "High-impact, multilingual corpus via a simple REST shape that's easy to integrate for apps and teaching." },
+    "docs": { "score": 8, "comment": "README covers endpoints, versioning, and fallbacks; an OpenAPI spec and richer docs site would help." },
+    "community": { "score": 7, "comment": "CONTRIBUTING present; benefit from issue/PR templates, labels, and a short governance note for new editions." },
+    "ethics": { "score": 10, "comment": "Clearly faith-aligned and beneficial, with references and attribution guidance." }
+  },
+  "total": 62,
+  "classification": "Model Repository",
+  "summary": "A widely reused, truly open Qur'an API (Unlicense) serving 90+ languages and 400+ translations. Its CDN-first JSON design makes integration trivial and resilient for educational and production use.",
+  "narrative": [
+    "The project distributes Qur'an data via jsDelivr with a clear REST-like URL pattern, enabling developers and educators to fetch chapters, verses, info, and fonts without authentication or rate limits.",
+    "Breadth matters here: 90+ languages and 400+ translations make this API a unique public resource for the global Muslim community.",
+    "Formalizing an OpenAPI spec, lightweight governance (how editions are vetted/updated), and a periodic changelog would make downstream adoption even smoother."
+  ],
+  "recommendations": [
+    "Publish an OpenAPI (Swagger) spec and link it from the README and docs site.",
+    "Add issue/PR templates, labels, and a brief governance note (edition criteria and update flow).",
+    "Provide a periodic CHANGELOG and consider semantic tags for data snapshots."
+  ],
+  "badges": {
+    "label": "MOSF Model Repository",
+    "color": "emerald",
+    "text": "62/70"
+  }
+}
+

@@ -1,0 +1,38 @@
+{
+  "slug": "quran-fawazahmed0",
+  "name": "Quran (Read in 90+ Languages)",
+  "repoUrl": "https://github.com/fawazahmed0/quran",
+  "websiteUrl": "https://fawazahmed0.github.io/quran",
+  "category": "Qur'an / Web App / Education",
+  "evaluationDate": "2025-11-04",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 10, "comment": "Directly advances access to the Qur'an across many languages; strong educational/public benefit." },
+    "openness": { "score": 3, "comment": "No LICENSE file in this repo. Add an explicit open-source license (MIT/BSD/Unlicense) to remove ambiguity." },
+    "liveness": { "score": 6, "comment": "History shows ~164 commits with open issues; no releases; activity appears intermittent. A light maintenance cadence would help." },
+    "value": { "score": 7, "comment": "Simple, fast reader powered by a separate API; practical for learners though technically modest." },
+    "docs": { "score": 7, "comment": "README includes usage links and edition parameters; add local setup, build, and explicit accessibility/RTL guidance." },
+    "community": { "score": 6, "comment": "Few contributors and limited governance materials; add CONTRIBUTING, CODE_OF_CONDUCT, and issue/PR templates." },
+    "ethics": { "score": 10, "comment": "Clearly faith-aligned and beneficial." }
+  },
+  "total": 49,
+  "classification": "Aligned",
+  "summary": "A straightforward Qur'an reader spanning many languages via an external Quran API. With an explicit license, contributor docs, and a small release cadence, it could move closer to Model status.",
+  "narrative": [
+    "The project offers a simple, shareable way to read the Qur'an and jump to chapters/verses or specify editions via URL parameters, which makes it learner-friendly and easy to embed in lessons.",
+    "Its reliance on a separate Free Quran API keeps this repo lightweight; clarifying attribution and licensing would improve reuse and institutional adoption.",
+    "Introducing basic governance files and a predictable update rhythm would encourage outside contributions and signal ongoing stewardship."
+  ],
+  "recommendations": [
+    "Add a LICENSE file (MIT/BSD/Unlicense) and include brief attribution to the Quran API and edition sources.",
+    "Add CONTRIBUTING.md, CODE_OF_CONDUCT.md, and issue/PR templates (bug, new edition request, feature).",
+    "Tag periodic releases and keep a short CHANGELOG.",
+    "Expand documentation with local setup/build and an accessibility checklist (keyboard, contrast, screen reader, RTL)."
+  ],
+  "badges": {
+    "label": "MOSF Aligned",
+    "color": "green",
+    "text": "49/70"
+  }
+}
+
