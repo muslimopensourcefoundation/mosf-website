@@ -2,7 +2,6 @@
   "slug": "quran-api-fawaz",
   "name": "Free Quran API (90+ languages)",
   "repoUrl": "https://github.com/fawazahmed0/quran-api",
-  "websiteUrl": "https://quranapi.pages.dev/",
   "category": "Qur'an / API / Data",
   "evaluationDate": "2025-11-04",
   "evaluator": "Muslim Open Source Foundation",
@@ -24,7 +23,7 @@
     "Formalizing an OpenAPI spec, lightweight governance (how editions are vetted/updated), and a periodic changelog would make downstream adoption even smoother."
   ],
   "recommendations": [
-    "Publish an OpenAPI (Swagger) spec and link it from the README and docs site.",
+    "Publish an OpenAPI (Swagger) spec and link it from the README.",
     "Add issue/PR templates, labels, and a brief governance note (edition criteria and update flow).",
     "Provide a periodic CHANGELOG and consider semantic tags for data snapshots."
   ],
@@ -34,4 +33,3 @@
     "text": "62/70"
   }
 }
-
