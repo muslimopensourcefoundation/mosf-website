@@ -16,7 +16,7 @@
     "ethics": { "score": 10, "comment": "Clearly faith-aligned and beneficial." }
   },
   "total": 38,
-  "classification": "Emerging / Stale",
+  "classification": "Stale",
   "summary": "A simple static Qur'an reader in Arabic hosted on GitHub Pages. Without a license, documentation, and recent maintenance, it remains a useful demo but not a reusable open-source project.",
   "narrative": [
     "This project provides a fast, minimal Arabic Qur'an reading experience as a static site. It demonstrates a straightforward build that can serve users without a backend.",
@@ -31,8 +31,8 @@
     "If the project is complete and intentionally inactive, note archival status and link to active readers."
   ],
   "badges": {
-    "label": "MOSF Emerging / Stale",
-    "color": "yellow",
+    "label": "MOSF Stale",
+    "color": "gray",
     "text": "38/70"
   }
 }

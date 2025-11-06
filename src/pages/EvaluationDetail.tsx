@@ -24,7 +24,7 @@ export default function EvaluationDetail() {
       // Create a concise description with score and classification
       metaDescription.setAttribute(
         'content',
-        `MOSF applies its Repository Evaluation Framework to the ${evaluation.name}. Score ${evaluation.total}/70 - ${evaluation.classification}.`
+        `MOSF evaluates ${evaluation.name}, ${evaluation.category.toLowerCase()}. Score ${evaluation.total}/70 - ${evaluation.classification}.`
       );
     } else {
       document.title = "Evaluation Not Found | MOSF";
@@ -57,7 +57,8 @@ export default function EvaluationDetail() {
   const getClassificationColor = (classification: string): string => {
     const colorMap: Record<string, string> = {
       "Inactive / Low Relevance": "gray",
-      "Emerging / Stale": "yellow",
+      "Emerging": "yellow",
+      "Stale": "gray",
       "Aligned": "green",
       "Model Repository": "emerald",
     };

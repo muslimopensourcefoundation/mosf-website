@@ -1,0 +1,39 @@
+{
+  "slug": "timeforsalahwebsite",
+  "name": "TimeForSalahWebsite",
+  "repoUrl": "https://github.com/buildwithmalik/TimeForSalahWebsite",
+  "websiteUrl": "https://www.timeforsalah.com/",
+  "category": "Prayer Times / Web App",
+  "evaluationDate": "2025-11-06",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 9, "comment": "Provides daily prayer times to the public using a reputable calculation method. Clear public benefit." },
+    "openness": { "score": 3, "comment": "No LICENSE file in the repository. Add MIT or similar to enable legal reuse." },
+    "liveness": { "score": 3, "comment": "Last authored commit in 2021, several Dependabot PRs from 2021–2022 remain open, 0 issues, no releases." },
+    "value": { "score": 5, "comment": "Useful example of integrating adhan-js in a simple site, but limited as a reference implementation." },
+    "docs": { "score": 4, "comment": "README is brief. Add local setup, build, deployment, and configuration notes plus accessibility guidance." },
+    "community": { "score": 3, "comment": "No governance files. Add CONTRIBUTING, CODE_OF_CONDUCT, and templates to encourage contributions." },
+    "ethics": { "score": 10, "comment": "Clear beneficial intent and faith alignment." }
+  },
+  "total": 37,
+  "classification": "Stale",
+  "summary": "A simple prayer times website that uses adhan-js. It works and serves a useful purpose, but the repository is unlicensed and largely inactive, which limits reuse and community growth.",
+  "narrative": [
+    "TimeForSalahWebsite demonstrates a straightforward approach to presenting daily prayer times in the browser. It relies on adhan-js for high precision calculations and moment-timezone for formatting.",
+    "The site is live, but the repository shows minimal activity since 2021. There are several unmerged dependency PRs and no issues or releases.",
+    "With a license, better documentation, and a minimal contribution process, this project could become a friendly starter for students and community developers."
+  ],
+  "recommendations": [
+    "Add a permissive LICENSE (MIT).",
+    "Document local setup, build, deploy, configuration, and data sources.",
+    "Add CONTRIBUTING.md, CODE_OF_CONDUCT.md, and issue or PR templates.",
+    "Triage Dependabot PRs, tag a release, and add a CHANGELOG.",
+    "Publish basic accessibility and RTL notes."
+  ],
+  "badges": {
+    "label": "MOSF Stale",
+    "color": "gray",
+    "text": "37/70"
+  }
+}
+

@@ -46,7 +46,8 @@ export default function EvaluationsIndex() {
   const getClassificationColor = (classification: string): string => {
     const colorMap: Record<string, string> = {
       "Inactive / Low Relevance": "gray",
-      "Emerging / Stale": "yellow",
+      "Emerging": "yellow",
+      "Stale": "gray",
       "Aligned": "green",
       "Model Repository": "emerald",
     };

@@ -24,7 +24,8 @@ export default function TotalBadge({
 
   const emojiMap: Record<string, string> = {
     "Inactive / Low Relevance": "⬜",
-    "Emerging / Stale": "🟨",
+    "Emerging": "🟨",
+    "Stale": "⬜",
     "Aligned": "🟩",
     "Model Repository": "🟢",
   };
