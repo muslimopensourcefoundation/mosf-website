@@ -1,0 +1,39 @@
+{
+  "slug": "quran-mohdovais",
+  "name": "Quran reader in Arabic",
+  "repoUrl": "https://github.com/mohdovais/quran",
+  "websiteUrl": "https://mohdovais.github.io/quran",
+  "category": "Qur'an / Web App / Reading",
+  "evaluationDate": "2025-11-05",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 10, "comment": "Direct access to the Qur'an for reading, clear public benefit." },
+    "openness": { "score": 3, "comment": "No LICENSE file or explicit licensing, add MIT or similar to enable legal reuse." },
+    "liveness": { "score": 2, "comment": "No commits since 2018, no issues or PR activity, no releases." },
+    "value": { "score": 6, "comment": "Lightweight Arabic reader, technically modest but useful as a static site." },
+    "docs": { "score": 4, "comment": "Lacks README, local setup, and accessibility notes." },
+    "community": { "score": 3, "comment": "No CONTRIBUTING or CODE_OF_CONDUCT, minimal contributor base, no templates." },
+    "ethics": { "score": 10, "comment": "Clearly faith-aligned and beneficial." }
+  },
+  "total": 38,
+  "classification": "Emerging / Stale",
+  "summary": "A simple static Qur'an reader in Arabic hosted on GitHub Pages. Without a license, documentation, and recent maintenance, it remains a useful demo but not a reusable open-source project.",
+  "narrative": [
+    "This project provides a fast, minimal Arabic Qur'an reading experience as a static site. It demonstrates a straightforward build that can serve users without a backend.",
+    "However, the repository has seen no development activity since 2018 and lacks documentation and licensing, which limits community reuse and contributions.",
+    "Adding a permissive license, basic docs, and minimal governance would lift it into the Aligned range and make it easier for others to adopt or extend."
+  ],
+  "recommendations": [
+    "Add a LICENSE file (MIT or BSD-3-Clause).",
+    "Create a README with local setup, build, and deploy steps.",
+    "Add CONTRIBUTING.md, CODE_OF_CONDUCT.md, and simple issue or PR templates.",
+    "Publish a small accessibility checklist and tag a release with a short CHANGELOG.",
+    "If the project is complete and intentionally inactive, note archival status and link to active readers."
+  ],
+  "badges": {
+    "label": "MOSF Emerging / Stale",
+    "color": "yellow",
+    "text": "38/70"
+  }
+}
+

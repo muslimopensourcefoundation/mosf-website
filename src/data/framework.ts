@@ -48,7 +48,7 @@ export const MOSF_FRAMEWORK = {
   ],
   classification: [
     { range: [0, 20], label: "Inactive / Low Relevance", color: "gray" },
-    { range: [21, 40], label: "Emerging", color: "yellow" },
+    { range: [21, 40], label: "Emerging / Stale", color: "yellow" },
     { range: [41, 59], label: "Aligned", color: "green" },
     { range: [60, 70], label: "Model Repository", color: "emerald" }
   ],

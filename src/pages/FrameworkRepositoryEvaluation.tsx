@@ -79,7 +79,7 @@ export default function FrameworkRepositoryEvaluation() {
             {MOSF_FRAMEWORK.classification.map((band) => {
               const emojiMap: Record<string, string> = {
                 "Inactive / Low Relevance": "⬜",
-                "Emerging": "🟨",
+                "Emerging / Stale": "🟨",
                 "Aligned": "🟩",
                 "Model Repository": "🟢",
               };
