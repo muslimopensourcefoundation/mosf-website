@@ -5,6 +5,7 @@ import quranFawaz from "./quran-fawazahmed0.json";
 import quranApiFawaz from "./quran-api-fawaz.json";
 import quranMohdovais from "./quran-mohdovais.json";
 import timeForSalahWebsite from "./timeforsalahwebsite.json";
+import audioQuran from "./audio-quran.json";
 import type { Evaluation } from "./types";
 
 export type {
@@ -15,7 +16,7 @@ export type {
 } from "./types";
 
 // In the future, auto-import all *.json via Vite glob if enabled:
-export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite];
+export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite, audioQuran];
 
 export const getBySlug = (slug: string): Evaluation | undefined => evaluations.find(e => e.slug === slug);
 

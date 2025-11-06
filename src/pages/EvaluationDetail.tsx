@@ -12,7 +12,7 @@ export default function EvaluationDetail() {
 
   useEffect(() => {
     if (evaluation) {
-      document.title = `${evaluation.name} - MOSF Evaluation`;
+      document.title = evaluation.metaTitle || `${evaluation.name} - MOSF Evaluation`;
       
       // Update or create meta description
       let metaDescription = document.querySelector('meta[name="description"]');
@@ -21,11 +21,9 @@ export default function EvaluationDetail() {
         metaDescription.setAttribute('name', 'description');
         document.head.appendChild(metaDescription);
       }
-      // Create a concise description with score and classification
-      metaDescription.setAttribute(
-        'content',
-        `MOSF evaluates ${evaluation.name}, ${evaluation.category.toLowerCase()}. Score ${evaluation.total}/70 - ${evaluation.classification}.`
-      );
+      // Use custom description if available, otherwise create a concise description with score and classification
+      const description = evaluation.metaDescription || `MOSF evaluates ${evaluation.name}, ${evaluation.category.toLowerCase()}. Score ${evaluation.total}/70 - ${evaluation.classification}.`;
+      metaDescription.setAttribute('content', description);
     } else {
       document.title = "Evaluation Not Found | MOSF";
     }

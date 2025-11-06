@@ -1,0 +1,37 @@
+{
+  "slug": "audio-quran",
+  "name": "Quranic Audio (audio.quran.com)",
+  "repoUrl": "https://github.com/quran/audio.quran.com",
+  "websiteUrl": "https://quranicaudio.com",
+  "category": "Qur'an / Audio / Web App",
+  "evaluationDate": "2025-11-06",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 10, "comment": "High public benefit, preserves and distributes Quran recitations." },
+    "openness": { "score": 10, "comment": "MIT license clearly published at the repo root." },
+    "liveness": { "score": 3, "comment": "Latest release in 2019, many open PRs and issues, limited recent code activity." },
+    "value": { "score": 7, "comment": "Reference for an audio site with Postgres seed and build scripts, patterns are somewhat dated." },
+    "docs": { "score": 6, "comment": "README covers install, dev, prod, and DB bootstrap; lacks accessibility and deployment depth." },
+    "community": { "score": 5, "comment": "CONTRIBUTING exists and issues are used, but numerous open PRs and no visible roadmap." },
+    "ethics": { "score": 10, "comment": "Clearly beneficial and faith-aligned." }
+  },
+  "total": 51,
+  "classification": "Aligned",
+  "summary": "The Quranic Audio repository provides the code behind the quranicaudio.com experience with an MIT license and practical setup instructions. It is a solid fit for MOSF's mission, although the project would benefit from renewed maintenance and clearer stewardship.",
+  "narrative": [
+    "This repository powers the Quranic Audio experience and includes a working Postgres schema and npm-based build workflow. The code and data bootstrap steps make it a useful learning reference for audio delivery projects.",
+    "Activity has slowed in recent years. The latest tagged release dates back to 2019 and there are many open PRs and issues, which suggests limited maintenance despite ongoing user interest.",
+    "With a small round of maintenance, a new tagged release, and clearer contribution processes, the project could serve as a strong foundation for community-led improvements."
+  ],
+  "recommendations": [
+    "Land small maintenance updates, tag a new release, and add a short CHANGELOG.",
+    "Triage and template issues and PRs, then publish a minimal public roadmap.",
+    "Add accessibility notes and more detailed deployment guidance for the DB-backed setup."
+  ],
+  "badges": {
+    "label": "MOSF Aligned",
+    "color": "green",
+    "text": "51/70"
+  }
+}
+

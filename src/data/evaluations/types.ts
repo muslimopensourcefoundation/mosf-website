@@ -34,5 +34,7 @@ export interface Evaluation {
   narrative: string[];
   recommendations: string[];
   badges: EvaluationBadges;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
