@@ -8,6 +8,7 @@ export default function EvaluationsIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"score" | "name" | "date">("score");
   const [sortedEvaluations, setSortedEvaluations] = useState<Evaluation[]>([]);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     document.title = "Repository Evaluations | MOSF";
@@ -54,8 +55,18 @@ export default function EvaluationsIndex() {
     return colorMap[classification] || "green";
   };
 
+  const copyEmailToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText("contact@muslimopensource.org");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-8">
         <header className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
@@ -65,7 +76,7 @@ export default function EvaluationsIndex() {
             Transparent assessments of Islamic open-source repositories using the{" "}
             <Link
               to="/frameworks/repository-evaluation"
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+              className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline"
             >
               MOSF Repository Evaluation Framework
             </Link>
@@ -84,7 +95,7 @@ export default function EvaluationsIndex() {
               placeholder="Search by name, category, or slug..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-mosf-dark-alt text-gray-900 dark:text-white focus:ring-2 focus:ring-mosf-navy-dark focus:border-transparent"
               aria-label="Search evaluations"
             />
           </div>
@@ -96,7 +107,7 @@ export default function EvaluationsIndex() {
               id="sort"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as "score" | "name" | "date")}
-              className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-mosf-dark-alt text-gray-900 dark:text-white focus:ring-2 focus:ring-mosf-navy-dark focus:border-transparent"
               aria-label="Sort evaluations"
             >
               <option value="score">Sort by Score</option>
@@ -117,7 +128,7 @@ export default function EvaluationsIndex() {
             {sortedEvaluations.map((evaluation) => (
               <article
                 key={evaluation.slug}
-                className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-gray-800"
+                className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-mosf-dark-alt"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1 space-y-3">
@@ -125,7 +136,7 @@ export default function EvaluationsIndex() {
                       <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                         <Link
                           to={`/evaluations/${evaluation.slug}`}
-                          className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="hover:text-mosf-navy-dark dark:hover:text-mosf-navy-300 transition-colors"
                         >
                           {evaluation.name}
                         </Link>
@@ -151,7 +162,7 @@ export default function EvaluationsIndex() {
                     />
                     <Link
                       to={`/evaluations/${evaluation.slug}`}
-                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium flex items-center gap-1 transition-colors"
+                      className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 font-medium flex items-center gap-1 transition-colors"
                     >
                       View Evaluation
                       <svg
@@ -177,7 +188,7 @@ export default function EvaluationsIndex() {
 
         <section
           id="submit"
-          className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 dark:border-blue-500 p-6 rounded-r-lg mt-12"
+          className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg mt-12"
         >
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Submit Your Project
@@ -190,20 +201,26 @@ export default function EvaluationsIndex() {
               To submit your repository for evaluation:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
-              <li>Email us at <a href="mailto:contact@muslimopensource.org" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline font-medium">contact@muslimopensource.org</a></li>
+              <li>
+                Email us at{" "}
+                <button
+                  onClick={copyEmailToClipboard}
+                  className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline font-medium cursor-pointer transition-colors"
+                  title="Click to copy email"
+                >
+                  {copied ? "Copied!" : "contact@muslimopensource.org"}
+                </button>
+              </li>
               <li>Use the subject line: <strong>"Repo Evaluation Submission"</strong></li>
               <li>Include a link to your repository (GitHub, GitLab, etc.)</li>
             </ul>
           </div>
           <a
             href="mailto:contact@muslimopensource.org?subject=Repo Evaluation Submission"
-            className="inline-block px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
+            className="inline-block px-6 py-3 bg-mosf-navy-dark dark:bg-mosf-navy-light text-white font-semibold rounded-lg hover:bg-mosf-navy-700 dark:hover:bg-mosf-navy-500 transition-colors"
           >
             Open Email Client
           </a>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            Or copy the email: <span className="font-mono text-gray-700 dark:text-gray-300">contact@muslimopensource.org</span>
-          </p>
         </section>
       </main>
     </div>

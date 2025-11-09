@@ -22,7 +22,7 @@ export default function ScoreTable({ scores }: ScoreTableProps) {
     <div className="overflow-x-auto mb-8">
       <table className="w-full border-collapse border border-gray-300 dark:border-gray-700">
         <thead>
-          <tr className="bg-gray-50 dark:bg-gray-800">
+          <tr className="bg-gray-50 dark:bg-mosf-dark-alt">
             <th className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-left font-semibold text-gray-900 dark:text-white">
               Criterion
             </th>

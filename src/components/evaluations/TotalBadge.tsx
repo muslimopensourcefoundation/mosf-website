@@ -16,7 +16,7 @@ export default function TotalBadge({
   text,
 }: TotalBadgeProps) {
   const colorClasses = {
-    gray: "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600",
+    gray: "bg-gray-100 dark:bg-mosf-dark-alt text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600",
     yellow: "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 border-yellow-300 dark:border-yellow-700",
     green: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 border-green-300 dark:border-green-700",
     emerald: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-200 border-emerald-300 dark:border-emerald-700",

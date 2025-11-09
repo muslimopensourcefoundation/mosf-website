@@ -8,7 +8,7 @@ export default function FrameworkRepositoryEvaluation() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-12">
         <header className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
@@ -20,7 +20,7 @@ export default function FrameworkRepositoryEvaluation() {
         </header>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Purpose
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -29,13 +29,13 @@ export default function FrameworkRepositoryEvaluation() {
         </section>
 
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Criteria (0-10 each; total {MOSF_FRAMEWORK.totalPoints})
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 dark:border-gray-700">
               <thead>
-                <tr className="bg-gray-50 dark:bg-gray-800">
+                <tr className="bg-gray-50 dark:bg-mosf-dark-alt">
                   <th className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-left font-semibold text-gray-900 dark:text-white">
                     Criterion
                   </th>
@@ -72,7 +72,7 @@ export default function FrameworkRepositoryEvaluation() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Classification Bands
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
@@ -85,7 +85,7 @@ export default function FrameworkRepositoryEvaluation() {
               };
               const emoji = emojiMap[band.label] || "";
               const colorClasses = {
-                gray: "bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-600",
+                gray: "bg-gray-100 dark:bg-mosf-dark-alt border-gray-300 dark:border-gray-600",
                 yellow: "bg-yellow-100 dark:bg-yellow-900/30 border-yellow-300 dark:border-yellow-700",
                 green: "bg-green-100 dark:bg-green-900/30 border-green-300 dark:border-green-700",
                 emerald: "bg-emerald-100 dark:bg-emerald-900/30 border-emerald-300 dark:border-emerald-700",
@@ -112,7 +112,7 @@ export default function FrameworkRepositoryEvaluation() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Scoring Philosophy
           </h2>
           <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 dark:text-gray-300 ml-4">
@@ -124,7 +124,7 @@ export default function FrameworkRepositoryEvaluation() {
           </ul>
         </section>
 
-        <section className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 dark:border-blue-500 p-6 rounded-r-lg">
+        <section className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Call to Action
           </h2>
@@ -132,7 +132,7 @@ export default function FrameworkRepositoryEvaluation() {
             If you maintain an open-source project aligned with Islamic values,{" "}
             <Link
               to={MOSF_FRAMEWORK.cta.link}
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline font-medium transition-colors"
+              className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline font-medium transition-colors"
             >
               {MOSF_FRAMEWORK.cta.text}
             </Link>

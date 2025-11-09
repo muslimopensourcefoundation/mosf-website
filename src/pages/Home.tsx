@@ -4,24 +4,31 @@ import NavLinks from "../components/NavLinks";
 export default function Home() {
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       {/* Header */}
-      <header className="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 border-b border-gray-200 dark:border-gray-700">
+      <header className="bg-gradient-to-br from-slate-50 to-mosf-navy-50 dark:from-mosf-dark-alt dark:to-mosf-dark border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-4xl mx-auto px-6 py-6">
           <div className="flex items-start justify-between mb-4">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-12 h-12 bg-blue-600 dark:bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-xs leading-tight">MOSF</span>
-                </div>
+                <img
+                  src="/images/logo.svg"
+                  alt="MOSF Logo"
+                  className="h-16 md:h-20 w-auto flex-shrink-0 block dark:hidden"
+                />
+                <img
+                  src="/images/logo-dark.jpg"
+                  alt="MOSF Logo"
+                  className="h-16 md:h-20 w-auto flex-shrink-0 hidden dark:block"
+                />
                 <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
                   Muslim Open Source Foundation
                 </h1>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base ml-14">
+              <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base ml-20 md:ml-24">
                 Empowering Muslims through open-source education and ethical technology
               </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400 ml-14 mt-1">
+              <p className="text-xs text-gray-500 dark:text-gray-400 ml-20 md:ml-24 mt-1">
                 A Washington State nonprofit corporation
               </p>
             </div>
@@ -35,7 +42,7 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-16">
         {/* Mission Section */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Mission
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -45,7 +52,7 @@ export default function Home() {
 
         {/* Vision Section */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Vision
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -55,7 +62,7 @@ export default function Home() {
 
         {/* About Section */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             About
           </h2>
           <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -75,10 +82,10 @@ export default function Home() {
         </section>
 
         {/* Status Notice */}
-        <section className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 dark:border-blue-500 p-6 rounded-r-lg">
+        <section className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg">
           <div className="flex items-start gap-3">
             <svg
-              className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5"
+              className="w-6 h-6 text-mosf-navy-dark dark:text-mosf-navy-300 flex-shrink-0 mt-0.5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -100,14 +107,14 @@ export default function Home() {
 
         {/* Contact Section */}
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Contact
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300">
             For inquiries, please reach out to us at:{" "}
             <a
               href="mailto:contact@muslimopensource.org"
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline font-medium transition-colors"
+              className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline font-medium transition-colors"
             >
               contact@muslimopensource.org
             </a>
@@ -116,7 +123,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-20">
+      <footer className="bg-gray-50 dark:bg-mosf-dark-alt border-t border-gray-200 dark:border-gray-700 mt-20">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <p className="text-center text-gray-600 dark:text-gray-400">
             © 2025 Muslim Open Source Foundation - All rights reserved.

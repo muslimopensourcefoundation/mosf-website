@@ -41,7 +41,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <header className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
@@ -56,7 +56,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <article
               key={index}
-              className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-800 hover:shadow-lg transition-shadow"
+              className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-mosf-dark-alt hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
@@ -67,7 +67,7 @@ export default function Projects() {
                     <span
                       className={`px-3 py-1 rounded-full text-xs font-semibold ${
                         project.status === "Planned"
-                          ? "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200"
+                          ? "bg-mosf-navy-100 dark:bg-mosf-navy-900/30 text-mosf-navy-800 dark:text-mosf-navy-200"
                           : "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200"
                       }`}
                     >
@@ -128,7 +128,7 @@ export default function Projects() {
                           Planned for {project.roadmapMonth} in our{" "}
                           <a
                             href="/roadmap"
-                            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+                            className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline"
                           >
                             rolling 12-month roadmap
                           </a>
@@ -158,7 +158,7 @@ export default function Projects() {
           ))}
         </section>
 
-        <section className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 dark:border-blue-500 p-6 rounded-r-lg">
+        <section className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
             Contributing to Projects
           </h2>
@@ -169,7 +169,7 @@ export default function Projects() {
             For questions, suggestions, or to express interest in contributing, please contact us at{" "}
             <a
               href="mailto:contact@muslimopensource.org"
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline font-medium"
+              className="text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline font-medium"
             >
               contact@muslimopensource.org
             </a>

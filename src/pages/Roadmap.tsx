@@ -46,7 +46,7 @@ export default function Roadmap() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-5xl mx-auto px-6 py-12 space-y-12">
         <header className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
@@ -61,18 +61,18 @@ export default function Roadmap() {
         </header>
 
         <section className="space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Monthly Goals
           </h2>
           <div className="space-y-8">
             {roadmap.map((item, index) => (
               <div
                 key={index}
-                className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-800 hover:shadow-lg transition-shadow"
+                className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-mosf-dark-alt hover:shadow-lg transition-shadow"
               >
                 <div className="flex flex-col md:flex-row md:items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-block px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white font-semibold rounded-lg">
+                    <div className="inline-block px-4 py-2 bg-mosf-navy-dark dark:bg-mosf-navy-light text-white font-semibold rounded-lg">
                       {item.month}
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Roadmap() {
           </div>
         </section>
 
-        <section className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-600 dark:border-blue-500 p-6 rounded-r-lg">
+        <section className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             🔁 Ongoing Workstreams (All Year)
           </h2>
@@ -136,7 +136,7 @@ export default function Roadmap() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             📈 Expected Outcomes (Oct 2026)
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -150,7 +150,7 @@ export default function Roadmap() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             ✅ Completed Goals by Month
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -199,7 +199,7 @@ export default function Roadmap() {
           )}
         </section>
 
-        <section className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg p-6">
+        <section className="bg-gray-50 dark:bg-mosf-dark-alt border border-gray-300 dark:border-gray-700 rounded-lg p-6">
           <p className="text-sm text-gray-600 dark:text-gray-400 italic">
             This is a rolling 12-month roadmap that will be updated monthly. As each month passes, the roadmap will be refreshed to maintain a forward-looking 12-month window, allowing us to adapt to actual progress, board decisions, and external factors. Last updated: November 2025.
           </p>

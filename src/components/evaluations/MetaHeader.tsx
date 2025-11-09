@@ -29,7 +29,7 @@ export default function MetaHeader({
             href={repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-1 hover:text-mosf-navy-dark dark:hover:text-mosf-navy-300 transition-colors"
             aria-label={`View ${name} repository`}
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ export default function MetaHeader({
             href={websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-1 hover:text-mosf-navy-dark dark:hover:text-mosf-navy-300 transition-colors"
             aria-label={`Visit ${name} website`}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

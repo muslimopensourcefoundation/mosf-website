@@ -31,7 +31,7 @@ export default function EvaluationDetail() {
 
   if (!evaluation) {
     return (
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+      <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
         <main className="max-w-4xl mx-auto px-6 py-12">
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
@@ -42,7 +42,7 @@ export default function EvaluationDetail() {
             </p>
             <Link
               to="/evaluations"
-              className="inline-block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+              className="inline-block text-mosf-navy-dark dark:text-mosf-navy-300 hover:text-mosf-navy-700 dark:hover:text-mosf-navy-200 underline"
             >
               View all evaluations
             </Link>
@@ -64,12 +64,12 @@ export default function EvaluationDetail() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-8">
         <nav className="text-sm text-gray-600 dark:text-gray-400 mb-4">
           <Link
             to="/evaluations"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="hover:text-mosf-navy-dark dark:hover:text-mosf-navy-300 transition-colors"
           >
             ← Back to Evaluations
           </Link>
@@ -95,7 +95,7 @@ export default function EvaluationDetail() {
         </div>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Summary
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -104,14 +104,14 @@ export default function EvaluationDetail() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Score Breakdown
           </h2>
           <ScoreTable scores={evaluation.scores} />
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-blue-200 dark:border-blue-800 pb-2">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
             Narrative Analysis
           </h2>
           <div className="space-y-4">
