@@ -1,0 +1,43 @@
+{
+  "slug": "quran-caption",
+  "name": "Quran Caption",
+  "repoUrl": "https://github.com/zonetecde/QuranCaption",
+  "websiteUrl": "https://qurancaption.com",
+  "category": "Quran / Video Editor / Media",
+  "evaluationDate": "2025-11-10",
+  "evaluator": "Muslim Open Source Foundation",
+  "scores": {
+    "alignment": { "score": 9, "comment": "Directly serves Islamic knowledge by making Quranic recitations accessible through professional video editing. Enables creation of captioned videos with translations in 40+ languages, supporting global Muslim community engagement with the Quran. Strong alignment with MOSF's mission of open Islamic knowledge and ethical technology." },
+    "openness": { "score": 8, "comment": "Open-source project with LICENSE file present. Source code accessible and actively developed. However, contributor guidance documentation (CONTRIBUTING.md) is not present in the repository. The project demonstrates openness through public repository and transparent development process." },
+    "liveness": { "score": 10, "comment": "Exceptionally active repository with 1,005 commits and 71 releases. Latest release (v3.2.2) on November 9, 2025 demonstrates recent maintenance. Regular release cadence and continuous development show strong stewardship. Active development indicates healthy project vitality." },
+    "value": { "score": 9, "comment": "High technical and educational value. Professional-grade video editor specifically designed for Quranic content with advanced features including multi-language subtitle support (40+ languages), Arabic text rendering, and extensive customization options. Addresses a real need in Islamic media creation and education." },
+    "docs": { "score": 7, "comment": "README provides project overview, screenshots, and developer setup instructions. Includes notes about required binaries (ffmpeg, ffprobe, yt-dlp) and compilation requirements. Release notes are well-maintained with detailed changelogs for each version. However, documentation could be enhanced with more comprehensive user guides, API documentation, and accessibility considerations. Developer notes are present but could be expanded." },
+    "community": { "score": 6, "comment": "Active Discord community mentioned in README, indicating community engagement. However, repository shows modest community metrics (32 stars, 6 forks). Governance documentation (CONTRIBUTING.md, CODE_OF_CONDUCT.md) is not present in the repository. Community stewardship exists but could benefit from more structured governance." },
+    "ethics": { "score": 9, "comment": "Strong ethical alignment with Islamic values. Project serves a clear beneficial purpose by making Quranic content more accessible. Transparent development process, honest presentation of features, and focus on public benefit. No ethical concerns identified. Project promotes Islamic knowledge sharing through ethical technology." }
+  },
+  "total": 58,
+  "classification": "Aligned",
+  "summary": "Quran Caption is a professional video editor designed specifically for creating captioned videos of Quranic recitations with translations in 40+ languages. The project demonstrates exceptional liveness with over 1,000 commits and 71 releases, including a recent v3.2.2 release. It serves a clear Islamic educational purpose and shows strong technical value. Enhanced documentation and more visible governance structures would elevate it to Model Repository status.",
+  "narrative": [
+    "Quran Caption addresses a specific need in Islamic media creation: transforming Quranic recitations into professional, captioned videos that can be shared across platforms like YouTube, TikTok, and Instagram. The project's focus on accessibility through multi-language translations (40+) demonstrates a commitment to serving the global Muslim community.",
+    "The repository shows exceptional vitality with 1,005 commits and 71 releases, including a very recent v3.2.2 release in November 2025. This level of activity indicates strong stewardship and continuous improvement. The project has evolved through multiple major versions, with Version 3 representing a complete UI/UX redesign and enhanced capabilities.",
+    "Built with modern technologies (Svelte, TypeScript, Rust) using the Tauri framework, Quran Caption demonstrates technical sophistication. The desktop application approach provides users with powerful local processing capabilities while maintaining cross-platform compatibility.",
+    "While the project has an active Discord community and demonstrates openness through public development, it could benefit from more visible governance documentation and contributor guidance. The modest star/fork count (32/6) may not fully reflect the project's value, suggesting potential for increased community engagement with better documentation and outreach."
+  ],
+  "recommendations": [
+    "Add explicit CONTRIBUTING.md and CODE_OF_CONDUCT.md files to establish clear governance and encourage community contributions.",
+    "Expand documentation with comprehensive user guides, video tutorials, and API documentation for developers.",
+    "Create a roadmap or project board to communicate future development plans and priorities.",
+    "Add accessibility documentation and considerations for users with different needs.",
+    "Consider adding issue and PR templates to facilitate community engagement and bug reporting.",
+    "Document the translation integration process and how new languages can be added."
+  ],
+  "badges": {
+    "label": "MOSF Aligned",
+    "color": "green",
+    "text": "58/70"
+  },
+  "metaTitle": "Quran Caption Evaluation | MOSF",
+  "metaDescription": "Evaluation of Quran Caption, a professional video editor for creating captioned Quranic recitation videos with translations in 40+ languages. Scored 58/70 on the MOSF framework."
+}
+

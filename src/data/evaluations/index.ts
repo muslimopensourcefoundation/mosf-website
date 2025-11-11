@@ -8,6 +8,7 @@ import timeForSalahWebsite from "./timeforsalahwebsite.json";
 import audioQuran from "./audio-quran.json";
 import hijriJs from "./hijri-js.json";
 import prayTimes from "./pray-times.json";
+import quranCaption from "./quran-caption.json";
 import type { Evaluation } from "./types";
 
 export type {
@@ -18,7 +19,7 @@ export type {
 } from "./types";
 
 // In the future, auto-import all *.json via Vite glob if enabled:
-export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite, audioQuran, hijriJs, prayTimes];
+export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite, audioQuran, hijriJs, prayTimes, quranCaption];
 
 export const getBySlug = (slug: string): Evaluation | undefined => evaluations.find(e => e.slug === slug);
 
