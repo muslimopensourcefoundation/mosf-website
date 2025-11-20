@@ -6,6 +6,7 @@
   "category": "Qur'an / Audio / Web App",
   "evaluationDate": "2025-11-06",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "High public benefit, preserves and distributes Quran recitations." },
     "openness": { "score": 10, "comment": "MIT license clearly published at the repo root." },

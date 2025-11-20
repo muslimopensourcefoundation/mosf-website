@@ -6,6 +6,7 @@
   "category": "Curation / Directory / Education",
   "evaluationDate": "2025-11-02",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 9, "comment": "Curated OSS list squarely aligned with MOSF goals: open Islamic knowledge and ethical tech for Muslims." },
     "openness": { "score": 6, "comment": "Links to OSS; however, repo lacks an explicit LICENSE file or license text in README. Add CC0 or CC-BY to clarify reuse." },

@@ -6,6 +6,7 @@
   "category": "Quran / Video Editor / Media",
   "evaluationDate": "2025-11-10",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "1.0.0",
   "scores": {
     "alignment": { "score": 9, "comment": "Directly advances Islamic knowledge, software education, or ethical technology in a public and transparent way. The project promotes community learning and digital access to Islamic content through its open-source da'wah tools. By enabling creation of captioned Quranic videos with translations in 40+ languages, it serves the global Muslim community and supports Islamic education. Strong alignment with MOSF's mission of open Islamic knowledge and ethical technology." },
     "openness": { "score": 3, "comment": "Project uses Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), which is a non-commercial license. This restricts legal reuse to non-commercial purposes only, making it source-available rather than truly open-source. The license explicitly prohibits commercial use, derivative works for commercial purposes, and limits redistribution. While the source code is accessible and the project is actively developed, the non-commercial restriction significantly limits the openness that MOSF values. Contributor guidance documentation (CONTRIBUTING.md) is also not present." },

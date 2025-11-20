@@ -5,6 +5,7 @@
   "category": "Qur'an / API / Data",
   "evaluationDate": "2025-11-04",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "Global, no-auth access to Qur'an text/translations directly serves Islamic education and public benefit." },
     "openness": { "score": 10, "comment": "Explicit Unlicense (public domain) with LICENSE file. Maximally permissive for reuse and research." },

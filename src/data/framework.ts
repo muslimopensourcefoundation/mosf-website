@@ -1,6 +1,9 @@
+import type { ChangelogEntry } from "../components/ChangelogSection";
+
 export const MOSF_FRAMEWORK = {
   title: "MOSF Repository Evaluation Framework",
   subtitle: "A transparent standard for assessing openness, ethical alignment, and vitality in Islamic open-source software.",
+  version: "1.0.0",
   totalPoints: 70,
   criteria: [
     {
@@ -205,6 +208,18 @@ export const MOSF_FRAMEWORK = {
   cta: {
     text: "Submit a repository for evaluation",
     link: "/evaluations#submit"
-  }
+  },
+  changelog: [
+    {
+      version: "1.0.0",
+      date: "2025-11-20",
+      changes: [
+        {
+          type: "added",
+          description: "Initial release of the MOSF Repository Evaluation Framework"
+        }
+      ]
+    }
+  ] as ChangelogEntry[]
 };
 

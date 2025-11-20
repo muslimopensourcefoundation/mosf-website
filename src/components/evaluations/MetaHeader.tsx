@@ -7,6 +7,7 @@ export interface MetaHeaderProps {
   category: string;
   evaluationDate: string;
   evaluator: string;
+  frameworkVersion?: string;
 }
 
 export default function MetaHeader({
@@ -16,6 +17,7 @@ export default function MetaHeader({
   category,
   evaluationDate,
   evaluator,
+  frameworkVersion,
 }: MetaHeaderProps) {
 
   return (
@@ -64,6 +66,14 @@ export default function MetaHeader({
           <span className="font-medium">By:</span>
           <span>{evaluator}</span>
         </span>
+        {frameworkVersion && (
+          <span className="flex items-center gap-1">
+            <span className="font-medium">Framework:</span>
+            <span className="px-2 py-0.5 text-xs font-semibold bg-gray-100 dark:bg-mosf-dark-alt text-gray-700 dark:text-gray-300 rounded border border-gray-300 dark:border-gray-700">
+              v{frameworkVersion}
+            </span>
+          </span>
+        )}
       </div>
     </div>
   );

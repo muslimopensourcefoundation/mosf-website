@@ -6,6 +6,7 @@
   "category": "Prayer Times / Multi-Language Library",
   "evaluationDate": "2025-11-06",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "Directly serves a fundamental Islamic need: accurate prayer time calculations. Provides open-source implementation of established calculation methods used by Muslims worldwide. Core mission aligns perfectly with MOSF's goal of open Islamic knowledge." },
     "openness": { "score": 7, "comment": "Project is described as open-source and provides source code access. However, no explicit LICENSE file is visible in the repository structure. Supports multiple languages (JavaScript, Python, PHP, Java, C++, C#, Objective C) which increases accessibility. Lacks visible contributor guidance documentation." },

@@ -6,6 +6,7 @@
   "category": "Arabic Literature / Data / Education",
   "evaluationDate": "2025-11-01",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 9, "comment": "Strong public-good focus on Arabic literary heritage and education." },
     "openness": { "score": 9, "comment": "MIT license; DB dumps and schema provided; open reuse posture." },

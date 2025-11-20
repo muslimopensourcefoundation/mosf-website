@@ -6,6 +6,7 @@
   "category": "Islamic Calendar / JavaScript Library",
   "evaluationDate": "2025-11-06",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 9, "comment": "Directly serves Islamic calendar needs, enabling accurate Hijri date conversion for Muslim applications and websites. Core functionality aligned with Islamic practice." },
     "openness": { "score": 8, "comment": "MIT license provides clear permissive licensing. Code is open and reusable, but lacks explicit contributor guidance (CONTRIBUTING.md)." },

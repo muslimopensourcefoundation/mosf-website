@@ -1,0 +1,45 @@
+{
+  "slug": "mosf-website",
+  "name": "MOSF Website",
+  "repoUrl": "https://github.com/muslimopensourcefoundation/mosf-website",
+  "websiteUrl": "https://muslimopensource.org",
+  "category": "Foundation Website / Framework Host",
+  "evaluationDate": "2025-01-27",
+  "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "1.0.0",
+  "scores": {
+    "alignment": { "score": 10, "comment": "This is the official MOSF website, directly serving the organization's mission of promoting open Islamic knowledge, ethical technology, and software engineering education. It hosts the Repository Evaluation Framework, making it a core tool for advancing MOSF's goals." },
+    "openness": { "score": 9, "comment": "MIT license provides clear permissive licensing. Code is fully open and reusable. CONTRIBUTING.md provides contributor guidance. Could benefit from more explicit documentation about the evaluation framework's data structure and contribution process." },
+    "liveness": { "score": 8, "comment": "Repository shows active maintenance with recent commits and feature additions (e.g., changelog system, evaluation framework updates). Regular updates to evaluation data and framework improvements demonstrate ongoing stewardship." },
+    "value": { "score": 7, "comment": "Functional website that serves as the public face of MOSF and hosts the evaluation framework. Provides value through transparency and accessibility of the framework. As a website rather than a reusable library, its technical value is more limited, but its educational and community value is significant." },
+    "docs": { "score": 7, "comment": "README provides basic setup and build instructions. CONTRIBUTING.md and CODE_OF_CONDUCT.md are present and well-written. Could benefit from more comprehensive documentation: deployment details, architecture overview, evaluation framework usage guide, and accessibility considerations." },
+    "community": { "score": 8, "comment": "Strong governance foundation with CONTRIBUTING.md and an excellent CODE_OF_CONDUCT.md that explicitly references Islamic ethical principles. The CODE_OF_CONDUCT demonstrates thoughtful integration of Islamic values. Could add issue/PR templates and more visible community engagement processes." },
+    "ethics": { "score": 10, "comment": "Exemplary alignment with Islamic ethics. The CODE_OF_CONDUCT explicitly references Islamic principles (Akhlaq, Adl, Rahmah) and integrates them with modern open-source community standards. The website serves public benefit, promotes transparency, and upholds values of justice, compassion, and mutual respect." }
+  },
+  "total": 59,
+  "classification": "Aligned",
+  "summary": "The MOSF website serves as the official platform for the Muslim Open Source Foundation, hosting the Repository Evaluation Framework and providing transparency into the organization's mission and activities. It demonstrates strong alignment with MOSF's values, excellent ethical grounding, and clear open-source licensing. While functional and well-governed, there are opportunities to enhance documentation and community engagement processes.",
+  "narrative": [
+    "As the official website of the Muslim Open Source Foundation, this repository directly embodies MOSF's mission. It serves multiple critical functions: presenting the organization's mission and vision, hosting the Repository Evaluation Framework, and providing a platform for evaluating Islamic open-source projects.",
+    "The website demonstrates strong ethical alignment through its CODE_OF_CONDUCT, which thoughtfully integrates Islamic ethical principles (Akhlaq, Adl, Rahmah) with modern open-source community standards. This represents a unique contribution to the open-source ecosystem, showing how faith-based values can guide community governance.",
+    "The Repository Evaluation Framework hosted on this site provides a transparent, structured approach to assessing Islamic open-source projects. By making the framework public and hosting evaluations, the website promotes accountability and encourages improvement in the Islamic open-source community.",
+    "While the repository shows active maintenance and good governance, there are opportunities for enhancement: more comprehensive documentation, issue/PR templates, and expanded contributor guidance could strengthen community engagement and make the codebase more accessible to new contributors."
+  ],
+  "recommendations": [
+    "Expand README with architecture overview, deployment process documentation, and evaluation framework usage guide.",
+    "Add GitHub issue and pull request templates to standardize community engagement.",
+    "Create a SECURITY.md file for security reporting procedures.",
+    "Document accessibility considerations and RTL language support in the codebase.",
+    "Consider adding a CHANGELOG.md to track framework and website updates over time.",
+    "Expand CONTRIBUTING.md with more detailed development workflow, testing guidelines, and code style standards.",
+    "Consider adding a roadmap or project board to track planned improvements and feature requests."
+  ],
+  "badges": {
+    "label": "MOSF Aligned",
+    "color": "green",
+    "text": "59/70"
+  },
+  "metaTitle": "MOSF Website Self-Evaluation | MOSF",
+  "metaDescription": "Self-evaluation of the Muslim Open Source Foundation website repository. Scored 59/70 on the MOSF framework."
+}
+

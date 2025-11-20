@@ -36,5 +36,6 @@ export interface Evaluation {
   badges: EvaluationBadges;
   metaTitle?: string;
   metaDescription?: string;
+  frameworkVersion?: string;
 }
 

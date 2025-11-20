@@ -1,0 +1,69 @@
+{
+  "slug": "quran-video-maker-ffmpeg",
+  "name": "quran-video-maker-ffmpeg",
+  "repoUrl": "https://github.com/ashaltu/quran-video-maker-ffmpeg",
+  "category": "Quran / Video Generator / Media",
+  "evaluationDate": "2025-01-27",
+  "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "1.0.0",
+  "scores": {
+    "alignment": {
+      "score": 10,
+      "comment": "Exemplary alignment with MOSF mission. The project directly advances Islamic knowledge and software education by creating a high-performance tool for generating Quranic video content. It serves Muslims, non-Muslims, Arabic readers, and non-Arabic readers by making Quranic content accessible and engaging. The project explicitly states its mission to help users seek tawbah and draw closer to Allah, demonstrating clear Islamic educational purpose. The tool facilitates digital access to Islamic content through professionally styled videos with synchronized Arabic text, translations, and recitations, directly promoting community learning and open-source da'wah tools."
+    },
+    "openness": {
+      "score": 10,
+      "comment": "Exemplary openness with GNU General Public License v3.0, an OSI-approved copyleft license. The project is freely reusable, modifiable, and redistributable with proper attribution. The license is clearly stated in both the LICENSE file and README, and contributors are explicitly informed that their contributions will be licensed under GPL v3.0. The project uses Git LFS for large data files and maintains transparency in its development process. All source code is accessible, and the project demonstrates full commitment to open-source values."
+    },
+    "liveness": {
+      "score": 8,
+      "comment": "Active development with regular commits and recent activity. Git history shows 34 commits since project inception (November 15, 2025), with the most recent commit on November 18, 2025, demonstrating intensive recent development activity. The project has 1 primary contributor (Abduselam Shaltu). The project is marked as WIP (Work in Progress) but shows strong signs of active development: comprehensive ROADMAP.md tracking current status and future features, GitHub Actions CI/CD workflows for automated testing and releases, unit test suite, and detailed CONTRIBUTING.md. The project has a Homebrew formula for distribution, indicating release management. While GitHub shows limited community engagement metrics (3 stars, 0 forks, 0 open issues as of evaluation), the commit history demonstrates regular, recent development activity and active maintenance, meeting the criteria for 'Active' development."
+    },
+    "value": {
+      "score": 9,
+      "comment": "High technical and educational value with innovative approach. The project is a sophisticated C++/FFmpeg-based tool that introduces valuable patterns for Islamic media creation. It demonstrates technical sophistication through: advanced Arabic text rendering with HarfBuzz for proper shaping, multi-language translation support with localization, custom audio processing with VTT/SRT timing support, intelligent caching systems, parallel processing optimizations, hardware acceleration support, and comprehensive video generation pipeline. The tool addresses a real need in Islamic media creation and education, providing both gapped (ayah-by-ayah) and gapless (continuous) workflows. The architecture is well-structured with modular components (text layout engine, subtitle builder, audio processor, etc.), making it valuable as both a tool and a learning resource."
+    },
+    "docs": {
+      "score": 8,
+      "comment": "Comprehensive documentation with clear setup instructions and examples. The README provides detailed installation guides for multiple platforms (macOS, Ubuntu/Debian), prerequisites, build instructions, quick start examples, comprehensive command-line option documentation, configuration explanations, and performance benchmarks. CONTRIBUTING.md includes detailed contribution guidelines, code style guidance, templates for bug reports and enhancements, and specific instructions for adding new languages/translations. ROADMAP.md provides transparent project status tracking. The documentation demonstrates accessibility awareness through multi-language support considerations and RTL text handling (though Urdu RTL rendering is noted as a known bug). However, API documentation for developers could be more extensive, and some advanced features could benefit from more detailed examples. The documentation is well-organized and ready for educational reuse."
+    },
+    "community": {
+      "score": 6,
+      "comment": "Developing community with good foundation but very limited current engagement. The project has excellent CONTRIBUTING.md with clear templates for bug reports, enhancement suggestions, and pull requests. It includes a Code of Conduct section within CONTRIBUTING.md (though not a separate CODE_OF_CONDUCT.md file). The project demonstrates openness to contribution with detailed guidelines, priority areas for contributions, and clear development setup instructions. However, GitHub shows minimal community engagement (3 stars, 0 forks, 0 issues, 0 pull requests as of evaluation), indicating the project is in early stages or has low visibility. The project lacks a separate CODE_OF_CONDUCT.md file, and there are no visible issue/PR templates in a .github folder (though templates are documented in CONTRIBUTING.md). The foundation for strong community stewardship is present through documentation, but actual community participation is currently minimal, and structured governance processes could be more visible."
+    },
+    "ethics": {
+      "score": 10,
+      "comment": "Exemplary ethical and faith alignment. The project is clearly guided by Islamic principles, transparency, and public benefit. CONTRIBUTING.md explicitly states guiding principles including sincerity (seeking Allah's pleasure), humbleness, educational focus, distraction-free design, shirk-free content, accessibility, and quality. The project's mission statement emphasizes helping users seek tawbah and draw closer to Allah. The README concludes with a dua (supplication): 'May Allah accept this work and make it a means of drawing closer to Him. Ameen.' The project serves a clear beneficial purpose by making Quranic content accessible to the global Muslim community and beyond. Transparent development process, honest presentation of features (including WIP status and known bugs), and focus on public benefit without harmful monetization. Upholds honesty, justice, and community service throughout."
+    }
+  },
+  "total": 61,
+  "classification": "Model Repository",
+  "summary": "quran-video-maker-ffmpeg is a high-performance C++/FFmpeg tool for generating beautiful Quran verse videos with synchronized Arabic text, translations, and recitations. The project demonstrates exemplary alignment with MOSF's mission, using GPL v3.0 for true open-source collaboration, and shows strong ethical grounding with explicit Islamic principles in its contribution guidelines. The project is actively developed with comprehensive documentation, CI/CD workflows, and a clear roadmap. It provides significant technical value through sophisticated video generation capabilities, multi-language support, and optimized performance. As a Model Repository, it exemplifies excellence in open-source stewardship while continuing to evolve toward v1.0. Minor improvements in governance visibility (separate CODE_OF_CONDUCT.md, GitHub issue/PR templates) would further strengthen its exemplary status.",
+  "narrative": [
+    "quran-video-maker-ffmpeg addresses a specific need in Islamic media creation: generating professionally styled videos of Quranic recitations with synchronized Arabic text and translations. The project serves Muslims, non-Muslims, Arabic readers, and non-Arabic readers by making Quranic content accessible and engaging through beautiful video presentations.",
+    "The repository demonstrates strong technical sophistication, built with C++17 and FFmpeg libraries, incorporating advanced features like HarfBuzz for Arabic text shaping, parallel processing for performance optimization, intelligent caching systems, and support for both gapped (ayah-by-ayah) and gapless (continuous) recitation modes. The tool supports custom audio with VTT/SRT timing files, multiple translation languages (English, Oromo, Amharic, Urdu), and comprehensive localization for surah names, reciter names, and numerals.",
+    "The project uses GNU General Public License v3.0, an OSI-approved copyleft license, demonstrating full commitment to open-source values. All source code is accessible, and contributors are explicitly informed that their contributions will be licensed under GPL v3.0. The project maintains transparency through Git LFS for large data files and clear licensing statements.",
+    "Git history reveals active development with 34 commits since project inception in November 2025, with the most recent activity just days before evaluation. The project has 1 primary contributor (Abduselam Shaltu). While marked as WIP (Work in Progress), the project shows clear signs of active development: comprehensive ROADMAP.md tracking current status and future features, GitHub Actions CI/CD workflows for automated testing and releases, a unit test suite covering key components, and detailed CONTRIBUTING.md with contribution guidelines. The project has a Homebrew formula for distribution, indicating release management practices.",
+    "Documentation is comprehensive and well-organized. The README provides detailed installation guides for multiple platforms, prerequisites, build instructions, quick start examples, and comprehensive command-line documentation. CONTRIBUTING.md includes detailed contribution guidelines, code style guidance, templates for bug reports and enhancements, and specific instructions for adding new languages. ROADMAP.md provides transparent project status tracking with clear indicators of feature stability.",
+    "The project demonstrates exemplary ethical alignment with explicit Islamic principles in CONTRIBUTING.md, including sincerity (seeking Allah's pleasure), humbleness, educational focus, distraction-free design, and shirk-free content. The project's mission emphasizes helping users seek tawbah and draw closer to Allah, and the README concludes with a dua (supplication). The project serves a clear beneficial purpose without harmful monetization.",
+    "The foundation for strong community stewardship is present with excellent CONTRIBUTING.md, but the project could benefit from more visible governance structures: a separate CODE_OF_CONDUCT.md file (currently embedded in CONTRIBUTING.md), GitHub issue/PR templates in a .github folder, and potentially more visible community engagement metrics. The project shows openness to contribution with detailed guidelines and priority areas, but structured governance processes could be more prominent."
+  ],
+  "recommendations": [
+    "Create a separate CODE_OF_CONDUCT.md file in the repository root to make community standards more visible and accessible, even though the content is currently in CONTRIBUTING.md.",
+    "Add GitHub issue and pull request templates in a .github folder to facilitate community engagement and standardize bug reporting and feature requests.",
+    "Consider expanding API documentation for developers who want to integrate or extend the tool, including architecture documentation and code examples.",
+    "Continue working toward v1.0 release to move beyond WIP status, which would strengthen the liveness score and community confidence.",
+    "Add more detailed examples in documentation for advanced features like custom audio processing, gapless mode workflows, and localization setup.",
+    "Consider adding accessibility documentation specifically addressing RTL text rendering (noting the known Urdu bug) and plans for improvement.",
+    "Document the translation integration process more extensively with step-by-step guides and examples for common languages.",
+    "Consider adding a CHANGELOG.md to track version history and improvements as the project progresses toward v1.0."
+  ],
+  "badges": {
+    "label": "Model Repository",
+    "color": "emerald",
+    "text": "61/70"
+  },
+  "metaTitle": "quran-video-maker-ffmpeg Evaluation | MOSF",
+  "metaDescription": "Evaluation of quran-video-maker-ffmpeg, a high-performance C++/FFmpeg tool for generating Quran verse videos with synchronized Arabic text and translations. Scored 61/70 on the MOSF framework."
+}
+

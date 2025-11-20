@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MOSF_FRAMEWORK } from "../data/framework";
+import ChangelogSection from "../components/ChangelogSection";
 
 export default function FrameworkRepositoryEvaluation() {
   useEffect(() => {
@@ -11,9 +12,16 @@ export default function FrameworkRepositoryEvaluation() {
     <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-12">
         <header className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-            {MOSF_FRAMEWORK.title}
-          </h1>
+          <div className="flex items-center gap-3 flex-wrap">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+              {MOSF_FRAMEWORK.title}
+            </h1>
+            {MOSF_FRAMEWORK.version && (
+              <span className="px-3 py-1 text-sm font-semibold bg-gray-100 dark:bg-mosf-dark-alt text-gray-700 dark:text-gray-300 rounded-md border border-gray-300 dark:border-gray-700">
+                v{MOSF_FRAMEWORK.version}
+              </span>
+            )}
+          </div>
           <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
             {MOSF_FRAMEWORK.subtitle}
           </p>
@@ -199,6 +207,10 @@ export default function FrameworkRepositoryEvaluation() {
               ))}
             </ul>
           </section>
+        )}
+
+        {MOSF_FRAMEWORK.changelog && MOSF_FRAMEWORK.changelog.length > 0 && (
+          <ChangelogSection changelog={MOSF_FRAMEWORK.changelog} />
         )}
 
         <section className="bg-mosf-navy-50 dark:bg-mosf-navy-900/20 border-l-4 border-mosf-navy-dark dark:border-mosf-navy-light p-6 rounded-r-lg">

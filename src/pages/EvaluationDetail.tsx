@@ -82,6 +82,7 @@ export default function EvaluationDetail() {
           category={evaluation.category}
           evaluationDate={evaluation.evaluationDate}
           evaluator={evaluation.evaluator}
+          frameworkVersion={evaluation.frameworkVersion}
         />
 
         <div className="mb-8">

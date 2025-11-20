@@ -6,6 +6,7 @@
   "category": "Qur'an / Web App / Education",
   "evaluationDate": "2025-11-02",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "Quran.com delivers open access to the Qur'an globally, perfectly aligned with MOSF's mission of open Islamic knowledge." },
     "openness": { "score": 4, "comment": "No LICENSE file is present. Until a permissive license (MIT/BSD/Apache) is added, the repository cannot be considered open source in legal terms." },

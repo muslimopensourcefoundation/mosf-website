@@ -6,6 +6,7 @@
   "category": "Prayer Times / Web App",
   "evaluationDate": "2025-11-06",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 9, "comment": "Provides daily prayer times to the public using a reputable calculation method. Clear public benefit." },
     "openness": { "score": 3, "comment": "No LICENSE file in the repository. Add MIT or similar to enable legal reuse." },

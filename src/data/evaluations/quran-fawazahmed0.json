@@ -6,6 +6,7 @@
   "category": "Qur'an / Web App / Education",
   "evaluationDate": "2025-11-04",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "Directly advances access to the Qur'an across many languages; strong educational/public benefit." },
     "openness": { "score": 3, "comment": "No LICENSE file in this repo. Add an explicit open-source license (MIT/BSD/Unlicense) to remove ambiguity." },

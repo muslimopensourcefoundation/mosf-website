@@ -6,6 +6,7 @@
   "category": "Qur'an / Web App / Reading",
   "evaluationDate": "2025-11-05",
   "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "beta",
   "scores": {
     "alignment": { "score": 10, "comment": "Direct access to the Qur'an for reading, clear public benefit." },
     "openness": { "score": 3, "comment": "No LICENSE file or explicit licensing, add MIT or similar to enable legal reuse." },
