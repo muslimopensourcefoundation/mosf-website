@@ -40,7 +40,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12 space-y-16">
+      <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
         {/* Mission Section */}
         <section className="space-y-4">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white border-b border-mosf-navy-200 dark:border-mosf-navy-800 pb-2">
