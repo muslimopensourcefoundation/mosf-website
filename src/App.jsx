@@ -6,6 +6,7 @@ import EvaluationDetail from "./pages/EvaluationDetail";
 import Roadmap from "./pages/Roadmap";
 import Projects from "./pages/Projects";
 import ArticlesOfIncorporation from "./pages/ArticlesOfIncorporation";
+import Donate from "./pages/Donate";
 import Home from "./pages/Home";
 import PageLayout from "./components/PageLayout";
 
@@ -70,6 +71,14 @@ function App() {
           element={
             <PageLayout>
               <ArticlesOfIncorporation />
+            </PageLayout>
+          }
+        />
+        <Route
+          path="/donate"
+          element={
+            <PageLayout>
+              <Donate />
             </PageLayout>
           }
         />
