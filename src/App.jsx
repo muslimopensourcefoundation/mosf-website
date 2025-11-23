@@ -7,6 +7,7 @@ import Roadmap from "./pages/Roadmap";
 import Projects from "./pages/Projects";
 import ArticlesOfIncorporation from "./pages/ArticlesOfIncorporation";
 import Donate from "./pages/Donate";
+import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import PageLayout from "./components/PageLayout";
 
@@ -79,6 +80,14 @@ function App() {
           element={
             <PageLayout>
               <Donate />
+            </PageLayout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <PageLayout>
+              <AboutUs />
             </PageLayout>
           }
         />
