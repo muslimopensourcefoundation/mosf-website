@@ -15,7 +15,7 @@ export default function Home() {
                 <img
                   src="/images/logo.svg"
                   alt="MOSF Logo"
-                  className="h-16 md:h-20 w-auto flex-shrink-0 block dark:hidden"
+                  className="h-20 md:h-20 w-auto flex-shrink-0 block dark:hidden"
                 />
                 <img
                   src="/images/logo-dark.jpg"
