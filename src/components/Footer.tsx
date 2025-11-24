@@ -31,7 +31,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              aria-label="Visit our GitHub repository"
+              aria-label={`Visit our ${item.name} Page`}
             >
               <svg
                 className="w-6 h-6"
