@@ -6,7 +6,7 @@ export default function NavLinks() {
     location.pathname === path || (path !== "/" && location.pathname.startsWith(path));
 
   return (
-    <nav className="ml-20 md:ml-24 flex flex-wrap items-center gap-4 mb-4">
+    <nav className="ml-5 md:ml-24 flex flex-wrap items-center gap-4">
       <Link
         to="/"
         className={`text-sm font-medium transition-colors ${

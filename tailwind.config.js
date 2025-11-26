@@ -26,6 +26,9 @@ export default {
           '900': '#06061c',
         },
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
