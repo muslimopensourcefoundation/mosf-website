@@ -11,7 +11,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 py-6">
           <div className="flex flex-col sm:flex-row items-center sm:items-between justify-between mb-4 space-y-4 sm:space-y-0 sm:space-x-4">
             <div className="relative w-1/3 max-w-[120px] sm:w-[15%] flex-shrink-0">
-              <img src="/images/logo.svg" className="h-auto w-full block dark:hidden" />
+              <img src="/images/logo.png" className="h-auto w-full block dark:hidden" />
               <img src="/images/logo-dark.png" className="h-auto w-full hidden dark:block" />
             </div>
             <div className="flex-1 mt-2 sm:mt-5 text-center sm:text-left">
