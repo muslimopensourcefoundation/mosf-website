@@ -1,6 +1,8 @@
 import { contacts } from "../data/contacts";
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
+
   return (
     <footer className="bg-gray-50 dark:bg-mosf-dark-alt border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-4xl mx-auto px-6 py-8">
@@ -23,26 +25,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-center mt-6 space-x-4">
-          {Object.entries(contacts).map(([key, item]) => (
-            <a
-              key={key}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              aria-label={`Visit our ${item.name} Page`}
-            >
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox={item.svg.viewBox}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d={item.svg.path}></path>
-              </svg>
-            </a>
-          ))}
+        <div className="flex justify-center mt-6">
+          <SocialLinks 
+            contacts={contacts}
+            className="flex justify-center gap-4"
+            iconClassName="w-6 h-6"
+          />
         </div>
       </div>
     </footer>
