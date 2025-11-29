@@ -55,6 +55,25 @@ const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/zaidati/",
     },
   },
+  {
+    photoUrl: "/images/profiles/hasnain-tariq.jpg",
+    name: "Hasnain Tariq",
+    role: "Senior Software Engineer",
+    bio: "I am a software engineer with strong experience in JavaScript, React, TypeScript, and building scalable B2C applications. I've worked across startups and international teams, contributing to projects in web development, building Architectures, and platform optimization. I also write technical blogs and contribute to open-source communities whenever possible.",
+    whyMosf: "I'm inspired by MOSF's mission to empower Muslim communities through open-source technology and collective knowledge-sharing. I want to contribute my technical skills to meaningful projects that create impact beyond commercial work. Most importantly, I want to leave something behind that can be a Sadaqa Jariya for me.",
+    focusAreas: [
+      "Front-end development",
+      "Open source collaboration",
+      "Software Architecture",
+      "JavaScript & TypeScript",
+      "Technical writing/developer education",
+      "Community-focused tech initiatives",
+    ],
+    location: "Karachi, Pakistan",
+    contacts: {
+      linkedin: "https://www.linkedin.com/in/hxnain619",
+    },
+  },
 ];
 
 export default function AboutUs() {
