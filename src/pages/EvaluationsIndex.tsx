@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { evaluations, type Evaluation } from "../data/evaluations";
 import TotalBadge from "../components/evaluations/TotalBadge";
+import Pagination from "../components/Pagination";
 import { formatDateShort, compareDates } from "../utils/dateUtils";
+
+const ITEMS_PER_PAGE = 10;
 
 export default function EvaluationsIndex() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"score" | "name" | "date">("score");
   const [sortedEvaluations, setSortedEvaluations] = useState<Evaluation[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -41,6 +45,7 @@ export default function EvaluationsIndex() {
     });
 
     setSortedEvaluations(filtered);
+    setCurrentPage(1); // Reset to first page when search or sort changes
   }, [searchQuery, sortBy]);
 
 
@@ -64,6 +69,12 @@ export default function EvaluationsIndex() {
       console.error("Failed to copy email:", err);
     }
   };
+
+  // Calculate pagination
+  const totalPages = Math.ceil(sortedEvaluations.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedEvaluations = sortedEvaluations.slice(startIndex, endIndex);
 
   return (
     <div className="min-h-screen bg-white dark:bg-mosf-dark transition-colors duration-200">
@@ -124,8 +135,9 @@ export default function EvaluationsIndex() {
             </p>
           </div>
         ) : (
-          <div className="space-y-6">
-            {sortedEvaluations.map((evaluation) => (
+          <>
+            <div className="space-y-6">
+              {paginatedEvaluations.map((evaluation) => (
               <article
                 key={evaluation.slug}
                 className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white dark:bg-mosf-dark-alt"
@@ -182,8 +194,18 @@ export default function EvaluationsIndex() {
                   </div>
                 </div>
               </article>
-            ))}
-          </div>
+              ))}
+            </div>
+
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              totalItems={sortedEvaluations.length}
+              itemsPerPage={ITEMS_PER_PAGE}
+              onPageChange={setCurrentPage}
+              itemLabel="evaluations"
+            />
+          </>
         )}
 
         <section
