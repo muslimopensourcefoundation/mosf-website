@@ -74,6 +74,23 @@ const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/hxnain619",
     },
   },
+  {
+    photoUrl: "/images/profiles/rizwan-shaik.png",
+    name: "Rizwan Shaik",
+    role: "Head of Content",
+    bio: "Assalamu Alaikum. I'm a fintech engineer by profession, and I spend my free hours on supporting founders, empowering learners, and contributing to meaningful non-profit initiatives. I'm driven by purpose, curiosity, and a sincere desire to leave a positive trace wherever I can Alhamdullilah.",
+    whyMosf: "I resonate with MOSF's vision very deeply. For the first time, Muslim tech professionals around the globe have the ability to make substantial impact, with technology and ethics at the core of everything we build.",
+    focusAreas: [
+      "Financial Engineering",
+      "Education and Mentorship",
+      "Youth Empowerment",
+      "Startup Ecosystems",
+      "Philanthropy",
+      "Ethical Tech",
+    ],
+    location: "Dallas, United States",
+    contacts: {},
+  },
 ];
 
 export default function AboutUs() {
