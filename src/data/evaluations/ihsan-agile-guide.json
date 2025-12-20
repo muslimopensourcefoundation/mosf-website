@@ -1,0 +1,65 @@
+{
+  "slug": "ihsan-agile-guide",
+  "name": "Ihsan Agile Guide",
+  "repoUrl": "https://github.com/ihsan-agile/ihsan-agile-guide",
+  "websiteUrl": "https://ihsanagile.org",
+  "category": "Framework / Methodology / Education",
+  "evaluationDate": "2025-01-27",
+  "evaluator": "Muslim Open Source Foundation",
+  "frameworkVersion": "1.0.0",
+  "scores": {
+    "alignment": {
+      "score": 10,
+      "comment": "Exemplary alignment with MOSF mission. The framework directly advances Islamic knowledge by embedding Qur'anic and Sunnah principles into Agile practices, serves ethical technology by providing Islamic ethical frameworks for software development teams, and contributes to software engineering education for Muslims through comprehensive guides, templates, and the Ihsan Agile Facilitator role. It addresses a critical gap: how Muslim-led teams can translate Islamic principles into daily Agile practices."
+    },
+    "openness": {
+      "score": 10,
+      "comment": "CC BY-SA 4.0 license is OSI-compatible and fully open. The license explicitly allows sharing, adaptation, and commercial use with attribution and share-alike terms. All content is freely reusable, modifiable, and redistributable. Clear licensing information in README and LICENSE file. CONTRIBUTING.md provides explicit contributor guidance. The framework is published with a DOI (10.5281/zenodo.17794838) for academic accessibility."
+    },
+    "liveness": {
+      "score": 8,
+      "comment": "Version 1.0 published December 3, 2025 (very recent). Active pilot program recruitment, community development phase, and clear roadmap extending through 2027. Planning CIC governance transition for early 2026. 150+ downloads in first 10 days demonstrates community interest. As a newly published framework, commit history is limited, but active planning, pilot engagement, and transparent roadmap show strong stewardship commitment. Regular updates expected as pilot feedback is incorporated."
+    },
+    "value": {
+      "score": 10,
+      "comment": "Highly innovative and academically significant. This is groundbreaking work that bridges Islamic principles (Niyyah, Ihsan, Maslahah) with established Agile methodologies (Scrum, Kanban, SAFe). Published with academic DOI, includes comprehensive 33-page guide, practical templates (Niyyah check-ins, Ethical DoD, Muhasabah retrospectives), governance resources (technical debt register, gharar assessment), and introduces the IAF role. Provides scalable, systematic approach to embedding Islamic values in software development practices. High educational and practical value for Muslim tech teams."
+    },
+    "docs": {
+      "score": 10,
+      "comment": "Comprehensive documentation. Excellent README with clear structure, quick start guides for teams and contributors, repository contents overview. Complete 33-page PDF framework guide. Multiple practical templates (niyyah-checkin-template.md, ethical-dod-checklist.md, muhasabah-retrospective-template.md, technical-debt-register.md, gharar-assessment-checklist.md). Well-written CONTRIBUTING.md with GitHub workflow details. Clear CODE_OF_CONDUCT.md grounded in Islamic principles. Detailed ROADMAP.md with transparent planning through 2027. Website (ihsanagile.org) provides additional resources. Case study template for pilot documentation. Ready for educational reuse and contribution."
+    },
+    "community": {
+      "score": 9,
+      "comment": "Strong governance foundation with excellent CODE_OF_CONDUCT.md that explicitly integrates Islamic ethical principles (Adab, Husn al-Zann, Shura, Ikhlas) with modern open-source standards. Comprehensive CONTRIBUTING.md with clear GitHub workflow. Detailed ROADMAP.md showing transparent planning. Issue templates in .github/ISSUE_TEMPLATE/. Active pilot program recruitment. Community engagement through GitHub Discussions, email contact, and website. As a very new project (published Dec 2025), community is still developing, but governance structure and engagement mechanisms are exemplary. Planning CIC governance transition demonstrates commitment to community ownership."
+    },
+    "ethics": {
+      "score": 10,
+      "comment": "Exemplary alignment with Islamic ethics. The framework is explicitly grounded in Qur'an and Sunnah, with three pillars (Niyyah, Ihsan, Maslahah) and five core principles (Taqwa, Amanah & Khilafah, Shura, Ibadah & Adl, Tazkiyah) directly from Islamic sources. CODE_OF_CONDUCT references Islamic values (karamah, adl, nasihah) and integrates them with community standards. Framework promotes public benefit (maslahah), transparency, justice, stewardship, and God-consciousness in all actions. The entire approach is designed to help teams work in accordance with Islamic ethics. No ethical concerns whatsoever."
+    }
+  },
+  "total": 67,
+  "classification": "Model Repository",
+  "summary": "The Ihsan Agile Guide is a groundbreaking framework that embeds Islamic values into Agile delivery practices. Published with academic rigor (DOI: 10.5281/zenodo.17794838), it provides Muslim-led teams with systematic practices to translate Qur'anic and Sunnah principles into daily Agile ceremonies. With exemplary documentation, strong governance, comprehensive templates, and explicit Islamic ethical grounding, it represents a model repository for Islamic open-source frameworks. The active pilot program and transparent roadmap demonstrate commitment to community-driven development and long-term stewardship.",
+  "narrative": [
+    "The Ihsan Agile Guide addresses a critical need in the Muslim tech community: how to operationalize Islamic values within existing Agile methodologies. Rather than replacing Scrum, Kanban, or SAFe, it enriches these practices with principles from the Qur'an and Sunnah, making values systematic and sustainable.",
+    "The framework's three pillars (Niyyah, Ihsan, Maslahah) and five core principles provide a theological foundation, while seven core practices offer practical implementation. The introduction of the Ihsan Agile Facilitator (IAF) role demonstrates thoughtful consideration of how to embed these values through dedicated stewardship.",
+    "What sets this repository apart is its comprehensive approach: academic publication with DOI, extensive documentation, practical templates for immediate use, governance resources (technical debt register, gharar assessment), and a clear roadmap extending through 2027. The CODE_OF_CONDUCT explicitly integrates Islamic ethical principles (Adab, Husn al-Zann, Shura, Ikhlas) with modern open-source community standards.",
+    "The framework's openness is exemplary - CC BY-SA 4.0 allows full reuse and adaptation, with clear contributor guidance. The active pilot program and community engagement mechanisms show commitment to learning and refinement through real-world implementation.",
+    "As a newly published framework (Version 1.0, December 2025), the community is still developing, but the governance structure, documentation quality, and ethical alignment make it a model for Islamic open-source projects. The planning for CIC governance transition demonstrates commitment to community ownership and long-term sustainability."
+  ],
+  "recommendations": [
+    "Continue building community engagement through GitHub Discussions and regular updates as pilot feedback is incorporated.",
+    "As translations are developed (planned for 2026), ensure they maintain the same quality and Islamic ethical grounding as the English version.",
+    "Document case studies from pilot organizations as they become available to demonstrate real-world implementation.",
+    "Consider creating video or interactive resources to complement the written documentation for different learning styles.",
+    "As the community grows, consider establishing regional chapters or local meetups to support adoption and peer learning."
+  ],
+  "badges": {
+    "label": "Model Repository",
+    "color": "emerald",
+    "text": "67/70"
+  },
+  "metaTitle": "Ihsan Agile Guide Evaluation | MOSF",
+  "metaDescription": "Evaluation of the Ihsan Agile Guide framework repository. Scored 67/70 on the MOSF framework, classified as Model Repository for its exemplary Islamic ethical alignment, comprehensive documentation, and innovative approach to embedding Islamic values in Agile practices."
+}
+

@@ -7,6 +7,7 @@ import quranMohdovais from "./quran-mohdovais.json";
 import timeForSalahWebsite from "./timeforsalahwebsite.json";
 import audioQuran from "./audio-quran.json";
 import hijriJs from "./hijri-js.json";
+import ihsanAgileGuide from "./ihsan-agile-guide.json";
 import prayTimes from "./pray-times.json";
 import quranCaption from "./quran-caption.json";
 import quranVideoMakerFfmpeg from "./quran-video-maker-ffmpeg.json";
@@ -21,7 +22,7 @@ export type {
 } from "./types";
 
 // In the future, auto-import all *.json via Vite glob if enabled:
-export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite, audioQuran, hijriJs, prayTimes, quranCaption, quranVideoMakerFfmpeg, mosfWebsite];
+export const evaluations: Evaluation[] = [qafiyah, awesomeMuslims, quranFrontendNext, quranFawaz, quranApiFawaz, quranMohdovais, timeForSalahWebsite, audioQuran, hijriJs, ihsanAgileGuide, prayTimes, quranCaption, quranVideoMakerFfmpeg, mosfWebsite];
 
 export const getBySlug = (slug: string): Evaluation | undefined => evaluations.find(e => e.slug === slug);
 
