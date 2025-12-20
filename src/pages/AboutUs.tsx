@@ -56,6 +56,23 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
+    photoUrl: "/images/profiles/ajmal-salim.jpeg",
+    name: "Ajmal Salim",
+    role: "Advisory Board Member",
+    bio: "Ajmal has over a decade of experience working with startups in a range of roles. He is a full-stack software engineer with a strong background in product and engineering, and has hands-on experience scaling startups from 0 to 1. As a side project, he is currently building https://halals.app.",
+    whyMosf: "As an engineer and entrepreneur, I love solving problems and advising startups. MOSF is a great initiative where people can collaborate on building solutions for the most relevant problems our community faces. When building a startup with no prior or less experience, things can be super hard and it is important to get help when needed and from the people who have done this before. This is where I think I can help.",
+    focusAreas: [
+      "Technology",
+      "Startups",
+      "Communities",
+    ],
+    location: "Australia",
+    contacts: {
+      linkedin: "https://au.linkedin.com/in/ajmalsalim",
+      website: "https://halals.app",
+    },
+  },
+  {
     photoUrl: "/images/profiles/hasnain-tariq.jpg",
     name: "Hasnain Tariq",
     role: "Senior Software Engineer",
