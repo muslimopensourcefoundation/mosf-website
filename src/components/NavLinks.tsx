@@ -58,6 +58,16 @@ export default function NavLinks() {
         Projects
       </Link>
       <Link
+        to="/white-papers"
+        className={`text-sm font-medium transition-colors ${
+          isActive("/white-papers") || location.pathname.startsWith("/white-papers/")
+            ? "text-mosf-navy-dark dark:text-mosf-navy-300 border-b-2 border-mosf-navy-dark dark:border-mosf-navy-300 pb-1"
+            : "text-gray-700 dark:text-gray-300 hover:text-mosf-navy-dark dark:hover:text-mosf-navy-300"
+        }`}
+      >
+        White Papers
+      </Link>
+      <Link
         to="/donate"
         className={`text-sm font-medium transition-colors ${
           isActive("/donate")

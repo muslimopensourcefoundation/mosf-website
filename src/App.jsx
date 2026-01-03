@@ -9,6 +9,8 @@ import ArticlesOfIncorporation from "./pages/ArticlesOfIncorporation";
 import Donate from "./pages/Donate";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
+import WhitePapersIndex from "./pages/WhitePapersIndex";
+import WhitePaperDetail from "./pages/WhitePaperDetail";
 import PageLayout from "./components/PageLayout";
 
 function App() {
@@ -88,6 +90,22 @@ function App() {
           element={
             <PageLayout>
               <AboutUs />
+            </PageLayout>
+          }
+        />
+        <Route
+          path="/white-papers"
+          element={
+            <PageLayout>
+              <WhitePapersIndex />
+            </PageLayout>
+          }
+        />
+        <Route
+          path="/white-papers/:slug"
+          element={
+            <PageLayout>
+              <WhitePaperDetail />
             </PageLayout>
           }
         />
